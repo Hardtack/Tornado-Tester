@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='Tornado-Tester',
-    version='0.1.0',
+    version='0.1.1',
     packages=setuptools.find_packages('tornado_tester'),
     url='https://github.com/hardtack/tornado-tester',
     license='MIT LICENSE',

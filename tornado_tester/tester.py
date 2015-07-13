@@ -154,7 +154,7 @@ class Tester(object):
         self._http_client = self.http_client_class(
             io_loop=self._http_server.io_loop)
         if self.port is None:
-            self._sock, port = tornado.testing.bind_unused_port()
+            self._sock, self.port = tornado.testing.bind_unused_port()
         else:
             self._sock = netutil.bind_sockets(self.port)
         self._http_server.add_socket(self._sock)
